@@ -1,5 +1,3 @@
-using System.Drawing;
-
 class Device
 {
     public string Naam { get; set; }
@@ -14,7 +12,6 @@ class Program
         int apparatenTotaal = 3;
         double prijs_kwh = 0.25;
         var apparaten = new List<Device>();
-
         for (int i = 0; i < apparatenTotaal; i++)
         {
             Console.ForegroundColor = ConsoleColor.Gray;

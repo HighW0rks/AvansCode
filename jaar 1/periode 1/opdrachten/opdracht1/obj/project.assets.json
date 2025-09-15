@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\code\\jaar 1\\periode 1\\opdrachten\\opdracht1\\opdracht1.csproj",
+      "projectUniqueName": "C:\\AvansCode\\jaar 1\\periode 1\\opdrachten\\opdracht1\\opdracht1.csproj",
       "projectName": "opdracht1",
-      "projectPath": "C:\\code\\jaar 1\\periode 1\\opdrachten\\opdracht1\\opdracht1.csproj",
+      "projectPath": "C:\\AvansCode\\jaar 1\\periode 1\\opdrachten\\opdracht1\\opdracht1.csproj",
       "packagesPath": "C:\\Users\\Bas Rijken\\.nuget\\packages\\",
-      "outputPath": "C:\\code\\jaar 1\\periode 1\\opdrachten\\opdracht1\\obj\\",
+      "outputPath": "C:\\AvansCode\\jaar 1\\periode 1\\opdrachten\\opdracht1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bas Rijken\\AppData\\Roaming\\NuGet\\NuGet.Config"
