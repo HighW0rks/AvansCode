@@ -1,0 +1,15 @@
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\bin\Debug\net9.0\opdracht2.exe
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\bin\Debug\net9.0\opdracht2.deps.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\bin\Debug\net9.0\opdracht2.runtimeconfig.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\bin\Debug\net9.0\opdracht2.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\bin\Debug\net9.0\opdracht2.pdb
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.GeneratedMSBuildEditorConfig.editorconfig
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.AssemblyInfoInputs.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.AssemblyInfo.cs
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.csproj.CoreCompileInputs.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.sourcelink.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\refint\opdracht2.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.pdb
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\opdracht2.genruntimeconfig.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht2\opdracht2\obj\Debug\net9.0\ref\opdracht2.dll
