@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerbeterCode", "VerbeterCode\VerbeterCode.csproj", "{007E9C56-D69F-4418-9811-386692F845B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lootjes_Generator", "Lootjes_Generator\Lootjes_Generator.csproj", "{075B28D2-A113-4135-B3FE-05613313FC53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{007E9C56-D69F-4418-9811-386692F845B5}.Release|x64.Build.0 = Release|Any CPU
 		{007E9C56-D69F-4418-9811-386692F845B5}.Release|x86.ActiveCfg = Release|Any CPU
 		{007E9C56-D69F-4418-9811-386692F845B5}.Release|x86.Build.0 = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|x64.Build.0 = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Debug|x86.Build.0 = Debug|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|x64.ActiveCfg = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|x64.Build.0 = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|x86.ActiveCfg = Release|Any CPU
+		{075B28D2-A113-4135-B3FE-05613313FC53}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

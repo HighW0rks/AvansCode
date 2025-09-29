@@ -1,0 +1,7 @@
+Money: 710
+Rod: 3
+Bait_1: 0
+Bait_2: 0
+Bait_3: 0
+Bait_4: 0
+Bait_5: 0

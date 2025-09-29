@@ -1,21 +1,23 @@
-﻿decimal saldo = 0.33m;
-decimal transactieBedrag = 49.95m;
-decimal kredietLimiet = -1000.0m;
+﻿double a = 0;
+double b = 1;
+double result_new = 0;
+double result_prev = 5;
 
-if (saldo - transactieBedrag >= 0)
+for (int i = 0; i < 20; i++)
 {
-    saldo -= transactieBedrag;
-    Console.WriteLine("verwerk transactie");
-}
-else if (saldo - transactieBedrag > kredietLimiet)
-{
-    saldo -= transactieBedrag;
-    Console.WriteLine("verwerk transactie");
-    Console.WriteLine("Let op: Saldo negatief");
-}
-else
-{
-     Console.WriteLine("Blokkeer transactie");
-}
+    a = a + b;
+    b = b + a;
+    result_new = b / a;
+    if ((result_prev - result_new) > 0.000001)
+    {
+        Console.WriteLine(result_new);
+        result_prev = result_new;
+    }
+    else
+    {
+        break;
+    }
 
-Console.WriteLine($"Uw saldo is: {saldo}");
+    
+
+}

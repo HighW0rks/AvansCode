@@ -1,0 +1,13 @@
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\bin\Debug\net9.0\SmartEnergy.Library.deps.json
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\bin\Debug\net9.0\SmartEnergy.Library.dll
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\bin\Debug\net9.0\SmartEnergy.Library.pdb
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.csproj.AssemblyReference.cache
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.AssemblyInfoInputs.cache
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.AssemblyInfo.cs
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.csproj.CoreCompileInputs.cache
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.sourcelink.json
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.dll
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\refint\SmartEnergy.Library.dll
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\SmartEnergy.Library.pdb
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Library\obj\Debug\net9.0\ref\SmartEnergy.Library.dll
