@@ -34,10 +34,10 @@ C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\scoped
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\scopedcss\bundle\SmartEnergy.Client.styles.css
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\scopedcss\projectbundle\SmartEnergy.Client.bundle.scp.css
-C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\fwjfuaouvh-19mzpvv550.gz
-C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\hyroenadyj-6gzpyzhau4.gz
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\fwjfuaouvh-78c2c0mavo.gz
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\hyroenadyj-bpk8xqwxhs.gz
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\n8czmueyxz-8inm30yfxf.gz
-C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\xozw4uyovg-89qbw8ngem.gz
+C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\xozw4uyovg-25iw1kog22.gz
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\woszhefvbe-ekj7g00uw4.gz
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\compressed\v2q0uxfdk7-ekj7g00uw4.gz
 C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\obj\Debug\net9.0\staticwebassets.build.json

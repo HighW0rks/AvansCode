@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VerbeterCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64502cf510a83a4c2c2560d9ad070f83f6e18c85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25bbcfc5808c464b96b689b3ccc8d4e4a21e3d6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("VerbeterCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VerbeterCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

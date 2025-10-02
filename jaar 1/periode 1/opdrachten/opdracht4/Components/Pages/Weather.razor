@@ -1,0 +1,103 @@
+﻿@page "/weather"
+@attribute [StreamRendering]
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Weather</h1>
+
+<p>This component demonstrates showing data.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th aria-label="Temperature in Celsius">Temp. (C)</th>
+                <th aria-label="Temperature in Fahrenheit">Temp. (F)</th>
+                <th>Summary</th>
+                <th>Icon</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                    <td>@forecast.WeatherIcon</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<WeatherForecast>? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+        CreateForecasts();
+    }
+
+    private void CreateForecasts()
+    {
+        forecasts = new List<WeatherForecast>();
+        var startDate = DateOnly.FromDateTime(DateTime.Now);
+        
+        for (int index = 1; index <= 5; index++)
+        {
+            var tempC = Random.Shared.Next(-20, 55);
+            string summary = GetSummaryForTemperature(tempC);
+            forecasts.Add(new WeatherForecast
+            {
+                Date = startDate.AddDays(index),
+                TemperatureC = tempC,
+                Summary = summary,
+                WeatherIcon = GetIconForSummary(summary)
+            });
+        }
+    }
+
+    private string GetIconForSummary(string summary) => summary switch
+    {
+        "Het vriest" => "❄️",
+        "Koud" => "🧥",
+        "Fris" => "🌤️",
+        "Warm" => "☀️",
+        "Heet" => "🔥",
+        _ => "❓"
+    };
+
+    private string GetSummaryForTemperature(int tempC)
+    {
+        if (tempC < 0)
+            return "Het vriest";
+        else if (tempC < 10)
+            return "Koud";
+        else if (tempC < 20)
+            return "Fris";
+        else if (tempC < 30)
+            return "Warm";
+        else
+            return "Heet";
+    }
+
+    private class WeatherForecast
+    {
+        public DateOnly Date { get; set; }
+        public int TemperatureC { get; set; }
+        public string? Summary { get; set; }
+        public string? WeatherIcon { get; set; }
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}

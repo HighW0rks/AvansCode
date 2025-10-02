@@ -10,6 +10,7 @@ namespace SmartEnergy.Library.Measurements.Repository;
 public class InfluxMeasurementRepository //: IMeasurementRepository
 {
     private readonly IInfluxDBClient _client;
+    private readonly List<string> _manufacturerMacs = ["16405E", "144068", "164068", "1640EF","1640D8"];
 
     public InfluxMeasurementRepository(IInfluxDBClient client)
     {
@@ -19,22 +20,38 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
     public List<Measurement> GetEnergyConsumed(int meterId, int daysToRetrieve, string aggregateWindow)
     {
         // Forward this request to a common private method and add specific data for this request (sensor and unit values)
-        return QueryP1SmartMeter(meterId, daysToRetrieve, aggregateWindow, Sensor.energy_consumed, Unit.KilowattHour);
+        return QueryOdoMeterReading(meterId, daysToRetrieve, aggregateWindow, Sensor.energy_consumed, Unit.KilowattHour);
     }
 
     public List<Measurement> GetEnergyProduced(int meterId, int daysToRetrieve, string aggregateWindow)
     {
         // Forward this request to a common private method and add specific data for this request (sensor and unit values)
-        return QueryP1SmartMeter(meterId, daysToRetrieve, aggregateWindow, Sensor.energy_produced, Unit.KilowattHour);
+        return QueryOdoMeterReading(meterId, daysToRetrieve, aggregateWindow, Sensor.energy_produced, Unit.KilowattHour);
     }
 
     public List<Measurement> GetGasDelivered(int meterId, int daysToRetrieve, string aggregateWindow)
     {
         // Forward this request to a common private method and add specific data for this request (sensor and unit values)
-        return QueryP1SmartMeter(meterId, daysToRetrieve, aggregateWindow, Sensor.gas_delivered, Unit.CubicMeter);
+        return QueryOdoMeterReading(meterId, daysToRetrieve, aggregateWindow, Sensor.gas_delivered, Unit.CubicMeter);
     }
 
     public List<Measurement> GetPower(int meterId, int daysToRetrieve, string aggregateWindow)
+    {
+        foreach (string manufacturerMac in _manufacturerMacs)
+        {
+            List<Measurement> measurements = QueryPowerReadingForManufacturer(meterId, daysToRetrieve, aggregateWindow, manufacturerMac);
+            if (measurements.Count > 0)
+            {
+                return measurements;
+            }
+            // else we continue with the next manufacturer mac address
+        }
+
+        // if no results are found it's most likely an invalid meterId, no results
+        return [];
+    }
+
+    public List<Measurement> QueryPowerReadingForManufacturer(int meterId, int daysToRetrieve, string aggregateWindow, string manufacturerMac)
     {
         var measurements = new List<Measurement>();
         // A stopwatch is used so we can monitor the time it took to retrieve and process the data from the influx database
@@ -44,7 +61,7 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
         string query =
             $"from(bucket: \"p1-smartmeters\")" +
             $"  |> range(start: {getStartDate(daysToRetrieve)}, stop: now())" +
-            $"  |> filter(fn: (r) => r[\"signature\"] == \"{getFullMeterIdInHex(meterId)}\")" +
+            $"  |> filter(fn: (r) => r[\"signature\"] == \"{getFullMeterIdInHex(meterId, manufacturerMac)}\")" +
             $"  |> filter(fn: (r) => r[\"_field\"] == \"power_consumed\" or r[\"_field\"] == \"power_produced\")" +
             $"  |> pivot(rowKey: [\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")" +
             $"  |> map(fn: (r) => ({{r with _value: r.power_consumed - r.power_produced}}))" +
@@ -59,7 +76,7 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
         var temperatures = EnrichMeasurementsWithTemperature(daysToRetrieve, aggregateWindow);
 
         // Make an API Call to the Influx server to retrieve the data requested by the query
-        var fluxTables =  _client.GetQueryApi().QueryAsync(query).GetAwaiter().GetResult();
+        var fluxTables = _client.GetQueryApi().QueryAsync(query).GetAwaiter().GetResult();
 
         // Make an API Call to the Influx server to retrieve the data requested by the query. Loop over the results by
         // reading all fluxTables (most likely one) and process all records (results) in that fluxTable. These records
@@ -90,7 +107,7 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
                     Unit = Unit.Watt,
                     EnergyPrice = energyPrice,
                     Temperature = temperature
-                }; 
+                };
 
                 measurements.Add(singleMeasurement);
             }
@@ -110,7 +127,33 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
     /// <param name="sensor">Type of data to retrieve from the influx database</param>
     /// <param name="unit">The unit of representation that is linked to the <c>sensor</c> information</param>
     /// <returns></returns>
-    private List<Measurement> QueryP1SmartMeter(int meterId, int daysToRetrieve, string aggregateWindow, Sensor sensor, Unit unit)
+    private List<Measurement> QueryOdoMeterReading(int meterId, int daysToRetrieve, string aggregateWindow, Sensor sensor, Unit unit)
+    {
+        foreach (string manufacturerMac in _manufacturerMacs)
+        {
+            List<Measurement> measurements = QueryOdoMeterReadingForManufacturer(meterId, daysToRetrieve, aggregateWindow, sensor, unit, manufacturerMac);
+            if (measurements.Count > 0)
+            {
+                return measurements;
+            }
+            // else we continue with the next manufacturer mac address
+        }
+
+        // if no results are found it's most likely an invalid meterId, no results
+        return [];
+    }
+
+    /// <summary>
+    /// Shared method with common implementation for querying the influx database.
+    /// </summary>
+    /// <param name="meterId">Decimal representation of the Hexadecimal ID of the P1 meter to retrieve data from</param>
+    /// <param name="daysToRetrieve">Number of days to retrieve from the dataset. Range: 1 (only today) up to 30 (one month)</param>
+    /// <param name="aggregateWindow">The time window for the aggregation of the measurements in seconds, minutes, hours or days.</param>
+    /// <param name="sensor">Type of data to retrieve from the influx database</param>
+    /// <param name="unit">The unit of representation that is linked to the <c>sensor</c> information</param>
+    /// <param name="manufacturerMac">The MAC address of the manufacturer (Wifi Unit)</param>
+    /// <returns></returns>
+    private List<Measurement> QueryOdoMeterReadingForManufacturer(int meterId, int daysToRetrieve, string aggregateWindow, Sensor sensor, Unit unit, string manufacturerMac)
     {
         var measurements = new List<Measurement>();
         // A stopwatch is used so we can monitor the time it took to retrieve and process the data from the influx database
@@ -121,7 +164,7 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
             $"from(bucket: \"p1-smartmeters\")" +
             $"  |> range(start: {getStartDate(daysToRetrieve)}, stop: now())" +
             $"  |> filter(fn: (r) => r[\"_field\"] == \"{sensor}\")" +
-            $"  |> filter(fn: (r) => r[\"signature\"] == \"{getFullMeterIdInHex(meterId)}\")" +
+            $"  |> filter(fn: (r) => r[\"signature\"] == \"{getFullMeterIdInHex(meterId, manufacturerMac)}\")" +
             $"  |> aggregateWindow(every: {aggregateWindow}, fn: min, createEmpty: false)" +
             $"  |> yield(name: \"min\")";
 
@@ -183,7 +226,7 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
                     Unit = unit,
                     EnergyPrice = energyPrice,
                     Temperature = temperature
-                }; 
+                };
 
                 measurements.Add(singleMeasurement);
             }
@@ -291,8 +334,8 @@ public class InfluxMeasurementRepository //: IMeasurementRepository
     /// <summary>
     /// Returns the full the Meter identifier (id) based on the provided meterId
     /// </summary>
-    private string getFullMeterIdInHex(int meterId)
+    private string getFullMeterIdInHex(int meterId, string manufacturerMac)
     {
-        return "2019-ETI-EMON-V01-" + meterId.ToString("X") + "-16405E";
+        return "2019-ETI-EMON-V01-" + meterId.ToString("X6") + "-" + manufacturerMac;
     }
 }

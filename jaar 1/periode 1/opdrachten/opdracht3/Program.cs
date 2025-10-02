@@ -11,16 +11,12 @@ namespace opdracht3
     class ApparaatOpslaan
     {
         public static List<ApparaatInfo> apparaten = [];
-        public static bool stopApp = false;
         static void Main()
         {
 
-            while (!stopApp)
-            {
-                Menu();
-            }
+            while (Menu()){}
         }
-        static void Menu()
+        static bool Menu()
         {
             int nummer;
             Console.WriteLine(); //Wit regel voor beter overzicht
@@ -63,12 +59,12 @@ namespace opdracht3
                     AdviesVragen().GetAwaiter().GetResult();
                     break;
                 case 5:
-                    stopApp = true;
-                    break;
+                    return false;
                 default:
                     EnhancedText("Voer een geldig optie in!", ConsoleColor.Red, true);
                     break;
             }
+            return true;
         }
 
         static void ApparaatToevoegen()

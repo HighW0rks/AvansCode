@@ -1,0 +1,15 @@
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\bin\Debug\net10.0\opdracht5.exe
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\bin\Debug\net10.0\opdracht5.deps.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\bin\Debug\net10.0\opdracht5.runtimeconfig.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\bin\Debug\net10.0\opdracht5.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\bin\Debug\net10.0\opdracht5.pdb
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.GeneratedMSBuildEditorConfig.editorconfig
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.AssemblyInfoInputs.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.AssemblyInfo.cs
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.csproj.CoreCompileInputs.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.sourcelink.json
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\refint\opdracht5.dll
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.pdb
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\opdracht5.genruntimeconfig.cache
+C:\AvansCode\jaar 1\periode 1\opdrachten\opdracht5\obj\Debug\net10.0\ref\opdracht5.dll

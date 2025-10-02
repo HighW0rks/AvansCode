@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fBl/RHa8hLE=",
+  "success": true,
+  "projectFilePath": "C:\\AvansCode\\jaar 1\\periode 1\\opdrachten\\opdracht4\\opdracht4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bas Rijken\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.0-rc.1.25451.107\\microsoft.aspnetcore.app.internal.assets.10.0.0-rc.1.25451.107.nupkg.sha512"
+  ],
+  "logs": []
+}
