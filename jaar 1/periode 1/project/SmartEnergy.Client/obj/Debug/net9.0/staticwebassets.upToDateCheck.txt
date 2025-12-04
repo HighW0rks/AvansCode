@@ -1,3 +1,0 @@
-C:\AvansCode\jaar 1\periode 1\project\SmartEnergy.Client\wwwroot\app.css
-wwwroot\app.css
-wwwroot\favicon.png
