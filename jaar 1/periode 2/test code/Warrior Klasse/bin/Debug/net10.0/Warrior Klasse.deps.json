@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Warrior Klasse/1.0.0": {
+        "runtime": {
+          "Warrior Klasse.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Warrior Klasse/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

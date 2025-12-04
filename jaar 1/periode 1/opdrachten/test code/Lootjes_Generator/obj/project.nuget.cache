@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KL1vg7XzzlA=",
+  "dgSpecHash": "TIldDMPXAXI=",
   "success": true,
   "projectFilePath": "C:\\AvansCode\\jaar 1\\periode 1\\opdrachten\\test code\\Lootjes_Generator\\Lootjes_Generator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bas Rijken\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.10\\microsoft.netcore.app.ref.9.0.10.nupkg.sha512",
+    "C:\\Users\\Bas Rijken\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.10\\microsoft.windowsdesktop.app.ref.9.0.10.nupkg.sha512",
+    "C:\\Users\\Bas Rijken\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.10\\microsoft.aspnetcore.app.ref.9.0.10.nupkg.sha512",
+    "C:\\Users\\Bas Rijken\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.10\\microsoft.netcore.app.host.win-x64.9.0.10.nupkg.sha512"
+  ],
   "logs": []
 }

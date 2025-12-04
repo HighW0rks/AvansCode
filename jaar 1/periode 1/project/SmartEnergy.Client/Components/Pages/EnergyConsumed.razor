@@ -60,13 +60,13 @@
     protected override void OnInitialized()
     {
         /* Number of days to retrieve, adjust according to your needs/requirements. */
-        int numberOfDays = 3;
+        int numberOfDays = 5;
 
         /* The time window to summarize the data. Examples are 20s (20 seconds), 5m (5 minutes) or 1h (1 hour). The
         smaller the value you set the more records and details you will retrieve from the meter. But it will also take
         longer to render your razor page. So choose the value wisely! Note: Anything smaller than 20 seconds has no
         effect, since the P1 meter only collects the data every 20 seconds. */
-        string aggregateWindow = "5m";
+        string aggregateWindow = "1m";
 
         measurements = this.measurementRepository.GetEnergyConsumed(smartMeterConfiguration.MeterId, numberOfDays, aggregateWindow);
     }

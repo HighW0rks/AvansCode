@@ -1,4 +1,4 @@
-/* _content/SmartEnergy.Client/Components/Layout/MainLayout.razor.rz.scp.css */
+/* /Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-b2ghb8qtsk] {
     position: relative;
     display: flex;
@@ -95,7 +95,7 @@ main[b-b2ghb8qtsk] {
         right: 0.75rem;
         top: 0.5rem;
     }
-/* _content/SmartEnergy.Client/Components/Layout/NavMenu.razor.rz.scp.css */
+/* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-jnm82fa79v] {
     appearance: none;
     cursor: pointer;

@@ -27,7 +27,7 @@ h1:focus {
 .navbar-dark,
 .nav-scrollable,
 .top-row {
-    background-color: red;
+    background-color: blue;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -54,4 +54,30 @@ h1:focus {
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
+}
+
+.text-paragraaf {
+    font-family: Arial, Helvetica, sans-serif; /* Kies een nette, leesbare lettertype */
+    font-size: 14px; /* Lettergrootte */
+    line-height: 1.6; /* Regelafstand voor betere leesbaarheid */
+    color: #333333; /* Tekstkleur */
+    margin-bottom: 8px; /* Ruimte onder elke paragraaf */
+    text-align: justify; /* Tekst uitlijnen zodat het er netter uitziet */
+}
+
+.input-fields {
+    display: flex;
+    gap: 20px; /* space between the two inputs */
+    align-items: flex-start; /* align tops */
+    justify-content: space-between; /* optional, spreads them out */
+    flex-wrap: wrap; /* ensures it wraps on smaller screens */
+}
+
+.input-field {
+    flex: 1; /* make both inputs take equal width */
+    display: flex;
+    flex-direction: column;
+}
+.mt-8 pa-4{
+    margin-bottom: 20px;
 }

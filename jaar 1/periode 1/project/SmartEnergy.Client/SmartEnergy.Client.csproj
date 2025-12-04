@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MudBlazor" Version="8.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SmartEnergy.Library\SmartEnergy.Library.csproj" />
   </ItemGroup>
 

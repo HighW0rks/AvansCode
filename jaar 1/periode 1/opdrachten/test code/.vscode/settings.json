@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "VerbeterCode.sln"
+    "dotnet.defaultSolution": "VerbeterCode.sln",
+    "avans-statisticalrobot.connected-robot": "100000004cbc5084"
 }

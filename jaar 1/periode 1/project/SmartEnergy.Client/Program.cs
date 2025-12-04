@@ -2,6 +2,7 @@ using InfluxDB.Client;
 using SmartEnergy.Client.Components;
 using SmartEnergy.Library.Measurements.Models;
 using SmartEnergy.Library.Measurements.Repository;
+using MudBlazor.Services;
 
 namespace SmartEnergy.Client;
 
@@ -9,6 +10,7 @@ public static class Program
 {
     private static void Main(string[] args)
     {
+
         var builder = WebApplication.CreateBuilder(args);
 
         /* TODO: update the value to the ID of your meter. Please note that this meterId is a decimal number and your
@@ -32,8 +34,9 @@ public static class Program
             })
             .AddSingleton<SmartMeterConfiguration>(o => smartMeterConfiguration)
             .AddTransient<InfluxMeasurementRepository>()
-            .AddRazorComponents();
-            //.AddInteractiveServerComponents(); <-- Uncomment if you want to play around with other blazor rendering modes
+            .AddMudServices()
+            .AddRazorComponents()
+            .AddInteractiveServerComponents();
             
             
 
@@ -55,8 +58,8 @@ public static class Program
         app.UseStaticFiles();
         app.UseAntiforgery();
 
-        app.MapRazorComponents<App>();
-            //.AddInteractiveServerRenderMode(); <-- Uncomment if you want to play around with other blazor rendering modes
+        app.MapRazorComponents<App>()
+            .AddInteractiveServerRenderMode();
         app.Run();
         
         

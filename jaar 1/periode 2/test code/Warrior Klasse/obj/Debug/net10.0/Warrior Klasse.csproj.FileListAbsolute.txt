@@ -1,0 +1,15 @@
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.GeneratedMSBuildEditorConfig.editorconfig
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.AssemblyInfoInputs.cache
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.AssemblyInfo.cs
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.csproj.CoreCompileInputs.cache
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.sourcelink.json
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\bin\Debug\net10.0\Warrior Klasse.exe
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\bin\Debug\net10.0\Warrior Klasse.deps.json
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\bin\Debug\net10.0\Warrior Klasse.runtimeconfig.json
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\bin\Debug\net10.0\Warrior Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\bin\Debug\net10.0\Warrior Klasse.pdb
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\refint\Warrior Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.pdb
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\Warrior Klasse.genruntimeconfig.cache
+C:\AvansCode\jaar 1\periode 2\test code\Warrior Klasse\obj\Debug\net10.0\ref\Warrior Klasse.dll

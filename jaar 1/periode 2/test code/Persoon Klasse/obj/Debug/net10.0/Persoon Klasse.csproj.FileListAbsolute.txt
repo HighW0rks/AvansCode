@@ -1,0 +1,15 @@
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\bin\Debug\net10.0\Persoon Klasse.exe
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\bin\Debug\net10.0\Persoon Klasse.deps.json
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\bin\Debug\net10.0\Persoon Klasse.runtimeconfig.json
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\bin\Debug\net10.0\Persoon Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\bin\Debug\net10.0\Persoon Klasse.pdb
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.GeneratedMSBuildEditorConfig.editorconfig
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.AssemblyInfoInputs.cache
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.AssemblyInfo.cs
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.csproj.CoreCompileInputs.cache
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.sourcelink.json
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\refint\Persoon Klasse.dll
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.pdb
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\Persoon Klasse.genruntimeconfig.cache
+C:\AvansCode\jaar 1\periode 2\test code\Persoon Klasse\obj\Debug\net10.0\ref\Persoon Klasse.dll
