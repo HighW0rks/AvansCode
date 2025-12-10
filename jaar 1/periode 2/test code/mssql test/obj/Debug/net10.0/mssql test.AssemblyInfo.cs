@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mssql_test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56638612283f6650b75661bfc41955d888f25a04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5d7c9d7a26ee70a5413c5995b0ae167347ddeba")]
 [assembly: System.Reflection.AssemblyProductAttribute("mssql_test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mssql_test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

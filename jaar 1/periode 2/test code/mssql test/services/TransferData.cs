@@ -50,11 +50,20 @@ namespace MsSqlTest
                     var sql = @"INSERT INTO sensor_data (Timestamp, Robot_Id, Sensor_Id, Value) 
                                VALUES (@Timestamp, @RobotId, @SensorId, @Value)";
                     
+                    int sensorId = 1; // Default sensor ID, adjust as needed
+                    if (topic == "robot/sensor/temperature")
+                    {
+                        sensorId = 1; // Temperature sensor ID
+                    }
+                    else if (topic == "robot/sensor/humidity")
+                    {
+                        sensorId = 2; // Humidity sensor ID
+                    }
                     var parameters = new
                     {
                         Timestamp = DateTime.Now,
                         RobotId = 1, // Default robot ID, adjust as needed
-                        SensorId = 1, // Temperature sensor ID, adjust as needed
+                        SensorId = sensorId, // Use the determined sensor ID
                         Value = value
                     };
 
