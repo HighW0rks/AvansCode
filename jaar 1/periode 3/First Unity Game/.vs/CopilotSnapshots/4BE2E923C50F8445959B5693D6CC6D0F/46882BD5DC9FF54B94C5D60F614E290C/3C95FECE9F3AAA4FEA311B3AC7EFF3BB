@@ -1,0 +1,75 @@
+﻿using Assets;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class LoginManager : MonoBehaviour
+{
+    public GameObject loginScreen;
+    public GameObject worldScreen;
+    public GameObject mainScreen;
+    public Image backGround;
+
+    public TMPro.TMP_InputField inputUserName;
+    public TMPro.TMP_InputField inputPassword;
+    public TMPro.TMP_Text errorText;
+    public TMPro.TMP_Dropdown Dropdown;
+
+    public int sizeIncrease = 4;
+
+    public System.Collections.Generic.List<Environment2d> environment = new System.Collections.Generic.List<Environment2d>
+    {
+        new () { Id = 1, Name = "wereld 1" },
+        new () { Id = 2, Name = "wereld 2" },
+    };
+
+
+    public void Start()
+    {
+        // Set background size using sizeDelta, not rect.width/height (rect is a struct, not a variable)
+        var rectTransform = backGround.rectTransform;
+        rectTransform.sizeDelta = new Vector2(Screen.width * sizeIncrease, Screen.height * sizeIncrease);
+        rectTransform.anchoredPosition = new Vector2(-Screen.width * 1.5f, -Screen.height * 1.5f); // Center the background
+        HideAllScreens();
+        loginScreen.SetActive(true);
+    }
+    public void OnLogin()
+    {
+        Debug.Log($"Attempting login for {inputUserName.text}");
+        //if (inputUserName.text == "admin" && inputPassword.text == "password")
+        //{
+            HideAllScreens();
+            worldScreen.SetActive(true);
+
+            var rectTransform = backGround.rectTransform;
+            rectTransform.sizeDelta = new Vector2(Screen.width, Screen.height);
+
+            foreach (var env in environment)
+            {
+                Dropdown.options.Add(new()
+                    {
+                    text = env.Name
+                    }
+                );
+            }
+        //}
+        //else
+        //{
+        //    ChangeErrorMessage("Invalid username or password.");
+        //}
+    }
+
+    public void HideAllScreens()
+    {
+        loginScreen.SetActive(false);
+        worldScreen.SetActive(false);
+        mainScreen.SetActive(false);
+    }
+
+    public void ChangeErrorMessage(string message)
+    {
+        errorText.text = message;
+    }
+
+
+
+}
