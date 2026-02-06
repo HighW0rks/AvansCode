@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Bas Rijken\\First Unity Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|c:\\users\\bas rijken\\first unity game\\assets\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|solutionrelative:assets\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|c:\\users\\bas rijken\\first unity game\\assets\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|c:\\users\\bas rijken\\first unity game\\assets\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\bas rijken\\first unity game\\assets\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\playbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|C:\\Users\\Bas Rijken\\First Unity Game\\assets\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21C2AF65-09D7-05A3-9663-9A1C7EA4C7A7}|Assembly-CSharp.csproj|solutionrelative:assets\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainManager.cs",
+              "DocumentMoniker": "C:\\Users\\Bas Rijken\\First Unity Game\\Assets\\MainManager.cs",
+              "RelativeDocumentMoniker": "Assets\\MainManager.cs",
+              "ToolTip": "C:\\Users\\Bas Rijken\\First Unity Game\\Assets\\MainManager.cs",
+              "RelativeToolTip": "Assets\\MainManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:36:57.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayButton.cs",
               "DocumentMoniker": "C:\\Users\\Bas Rijken\\First Unity Game\\Assets\\PlayButton.cs",
               "RelativeDocumentMoniker": "Assets\\PlayButton.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ScreenManager.cs",
               "DocumentMoniker": "C:\\Users\\Bas Rijken\\First Unity Game\\Assets\\ScreenManager.cs",
               "RelativeDocumentMoniker": "Assets\\ScreenManager.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Assets\\ScreenManager.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwF0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T12:12:35.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T12:12:35.208Z"
             }
           ]
         }

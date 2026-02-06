@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class WorldEditorManager : MonoBehaviour
@@ -22,7 +22,7 @@ public class WorldEditorManager : MonoBehaviour
     public void Add2dObject(GameObject gameObject)
     {
         var newGameObject = Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity, parentCanvas);
-        newGameObject.transform.SetAsLastSibling();
+        newGameObject.transform.SetAsLastSibling(); // Move to top in hierarchy
         var draggable = newGameObject.GetComponent<Draggable>();
         draggable.StartDragging();
     }

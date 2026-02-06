@@ -99,6 +99,7 @@ public class ScreenManager : MonoBehaviour
         loginScreen.SetActive(false);
         worldScreen.SetActive(false);
         mainScreen.SetActive(false);
+        worldEditScreen.SetActive(false);
     }
 
     public void ChangeErrorMessage(string message)
