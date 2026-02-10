@@ -1,0 +1,28 @@
+{
+    "people": [
+        {
+            "first_name": "Ewout",
+            "last_name": "Baars"
+        },
+        {
+            "first_name": "Stijn",
+            "last_name": "van Houwelingen"
+        },
+        {
+            "first_name": "John",
+            "last_name": "Doe"
+        },
+        {
+            "first_name": "alan",
+            "last_name": "turing"
+        },
+        {
+            "first_name": "ada",
+            "last_name": "lovelace"
+        },
+        {
+            "first_name": "henk",
+            "last_name": "de hopper"
+        }
+    ]
+}
