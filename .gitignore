@@ -1,10 +1,22 @@
-jaar 1/periode 1/project/.vs/SmartEnergy/FileContentIndex/e2e5ce2a-6051-4ddf-813f-ccadac3edc37.vsidx
-/jaar 1/periode 1/project
-/jaar 1/periode 2/project
-jaar 1/github master class/eleventy-base-blog/
-jaar 1/github master class/git-workshop/
-/jaar 1/periode 3/First Unity Game/Logs
-/jaar 1/periode 3/First Unity Game/Library
-/jaar 1/periode 3/First Unity Game/obj
-/jaar 1/periode 3/AvansUnityGame
-/jaar 1/periode 3/AvansUnityBackend
+# Visual Studio / VS Code
+.vs/
+.vscode/
+.idea/
+.lens/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Bb]uild/
+[Bb]uilds/
+
+# OS
+.DS_Store
+Thumbs.db
