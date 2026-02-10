@@ -1,0 +1,31 @@
+@page "/MagicNumber"
+@inject IMagicNumberService magic
+<div class="border border-primary rounded p-3">
+    <h2>MagicNumber</h2>
+
+    <p class="text-center">The 6 magic numbers are: </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center col-sm-6 col-md-3 col-lg-4 bg-danger">@magicNumbers[0]</div>
+                <div class="text-center col-sm-6 col-md-3 col-lg-4 bg-info">@magicNumbers[1]</div>
+                <div class="text-center col-sm-12 col-md-6 col-lg-4 bg-primary">@magicNumbers[2]</div>
+            </div>
+            <div class="row">
+                <div class="text-center col-6 bg-danger">@magicNumbers[3]</div>
+                <div class="text-center col-4 bg-info">@magicNumbers[4]</div>
+                <div class="text-center col-2 bg-primary">@magicNumbers[5]</div>
+            </div>
+        </div>
+</div>
+
+@code {
+
+    private List<int> magicNumbers = new List<int>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        magicNumbers = magic.GetMagicNumberList(6);
+        await Task.CompletedTask;
+    }
+
+}

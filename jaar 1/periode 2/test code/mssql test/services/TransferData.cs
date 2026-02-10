@@ -18,7 +18,8 @@ namespace MsSqlTest
             try
             {
                 client = SimpleMqttClient.CreateSimpleMqttClientForHiveMQ("client1");
-                await client.SubscribeToTopic("temperatuur");
+                await client.SubscribeToTopic("robot/sensor/temperature");
+                await client.SubscribeToTopic("robot/sensor/humidity");
 
                 client.OnMessageReceived += async (s, e) =>
                 {
